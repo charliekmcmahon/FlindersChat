@@ -1,0 +1,161 @@
+[debug] [2020-07-21T01:20:48.967Z] ----------------------------------------------------------------------
+[debug] [2020-07-21T01:20:48.970Z] Command:       /usr/local/bin/firebase /Users/a011112/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2020-07-21T01:20:48.971Z] CLI Version:   8.6.0
+[debug] [2020-07-21T01:20:48.971Z] Platform:      darwin
+[debug] [2020-07-21T01:20:48.971Z] Node Version:  v12.18.1
+[debug] [2020-07-21T01:20:48.973Z] Time:          Tue Jul 21 2020 11:20:48 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2020-07-21T01:20:48.973Z] ----------------------------------------------------------------------
+[debug] [2020-07-21T01:20:48.973Z] 
+[debug] [2020-07-21T01:20:48.998Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-21T01:20:48.999Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/a011112/Documents/GitHub/FlindersChat
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-07-21T01:20:54.181Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-07-21T01:20:54.181Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-07-21T01:20:54.817Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Jul 2020 01:20:54 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-21T01:20:54.838Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-07-21T01:20:56.212Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Jul 2020 01:20:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project flinderschat (FlindersChat) 
+[info] 
+=== Firestore Setup
+[debug] [2020-07-21T01:20:58.187Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/flinderschat/services/firestore.googleapis.com  
+ 
+[debug] [2020-07-21T01:20:59.950Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Jul 2020 01:20:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-21T01:20:59.951Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/flinderschat  
+ 
+[debug] [2020-07-21T01:21:02.049Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Jul 2020 01:21:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-21T01:21:02.050Z] database_type: CLOUD_FIRESTORE
+[debug] [2020-07-21T01:21:02.051Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-21T01:21:02.051Z] > authorizing via signed-in user
+[debug] [2020-07-21T01:21:02.052Z] [iam] checking project flinderschat for permissions ["firebase.projects.get"]
+[debug] [2020-07-21T01:21:02.053Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/flinderschat:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-07-21T01:21:02.895Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Jul 2020 01:21:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=210","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2020-07-21T01:21:08.205Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/flinderschat/releases?pageSize=10&pageToken=  
+ 
+[debug] [2020-07-21T01:21:10.231Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Jul 2020 01:21:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-21T01:21:10.233Z] Found ruleset: projects/flinderschat/rulesets/7891da25-f1df-4213-9b1c-f6f851da8ec6
+[debug] [2020-07-21T01:21:10.233Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/flinderschat/rulesets/7891da25-f1df-4213-9b1c-f6f851da8ec6  
+ 
+[debug] [2020-07-21T01:21:10.639Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Jul 2020 01:21:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2020-07-21T01:21:14.013Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/flinderschat/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2020-07-21T01:21:14.014Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/flinderschat/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2020-07-21T01:21:14.727Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Jul 2020 01:21:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-21T01:21:15.142Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Jul 2020 01:21:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2020-07-21T01:21:22.744Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-07-21T01:21:23.543Z] Error: self signed certificate in certificate chain
+    at TLSSocket.onConnectSecure (_tls_wrap.js:1501:34)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket._finishInit (_tls_wrap.js:936:8)
+    at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:710:12)
+[error] 
+[error] Error: Server Error. self signed certificate in certificate chain
+[debug] [2020-07-21T01:21:47.533Z] ----------------------------------------------------------------------
+[debug] [2020-07-21T01:21:47.539Z] Command:       /usr/local/bin/firebase /Users/a011112/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2020-07-21T01:21:47.539Z] CLI Version:   8.6.0
+[debug] [2020-07-21T01:21:47.539Z] Platform:      darwin
+[debug] [2020-07-21T01:21:47.539Z] Node Version:  v12.18.1
+[debug] [2020-07-21T01:21:47.541Z] Time:          Tue Jul 21 2020 11:21:47 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2020-07-21T01:21:47.541Z] ----------------------------------------------------------------------
+[debug] [2020-07-21T01:21:47.542Z] 
+[debug] [2020-07-21T01:21:47.565Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-21T01:21:47.567Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/a011112/Documents/GitHub/FlindersChat
+
+[debug] [2020-07-21T01:21:59.876Z] ----------------------------------------------------------------------
+[debug] [2020-07-21T01:21:59.879Z] Command:       /usr/local/bin/firebase /Users/a011112/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2020-07-21T01:21:59.880Z] CLI Version:   8.6.0
+[debug] [2020-07-21T01:21:59.880Z] Platform:      darwin
+[debug] [2020-07-21T01:21:59.880Z] Node Version:  v12.18.1
+[debug] [2020-07-21T01:21:59.882Z] Time:          Tue Jul 21 2020 11:21:59 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2020-07-21T01:21:59.882Z] ----------------------------------------------------------------------
+[debug] [2020-07-21T01:21:59.882Z] 
+[debug] [2020-07-21T01:21:59.896Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-21T01:21:59.897Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/a011112/Documents/GitHub/FlindersChat
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-07-21T01:22:09.093Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-07-21T01:22:24.129Z] Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2020-07-21T01:22:30.870Z] FirebaseError: Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com
+    at Request._callback (/Users/a011112/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/api.js:32:31)
+    at self.callback (/Users/a011112/.cache/firebase/tools/lib/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (/Users/a011112/.cache/firebase/tools/lib/node_modules/request/request.js:877:8)
+    at ClientRequest.emit (events.js:327:22)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
